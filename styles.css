@@ -38,7 +38,7 @@ header p {
     margin-top: 10px;
 }
 
-.bx:hover{
+.bx:hover {
     transform: scale(1.01) translateY(-5px);
     transition: all ease-in 0.3s;
 }
@@ -73,6 +73,82 @@ section ul {
     margin-left: 20px;
 }
 
+#more-articles {
+    padding: 20px;
+    background: linear-gradient(135deg, #b4d1b7, #3498db);
+    color: white;
+    text-align: center;
+}
+
+#more-articles h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.article-card {
+    background-color: #dee3de;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    min-width: 300px;
+    max-width: 300px;
+    margin: 0 10px;
+}
+
+.article-card:hover {
+    transform: scale(1.05);
+}
+
+.article-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.article-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 15px 0;
+}
+
+.article-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
 /* Footer */
 footer {
     background: #333;
@@ -103,6 +179,21 @@ footer p {
     section ul {
         font-size: 1em;
     }
+
+    .carousel-container {
+        width: 100%;
+    }
+
+    .article-card {
+        min-width: 90%;
+        max-width: 90%;
+    }
+
+    .carousel-prev,
+    .carousel-next {
+        display: none;
+    }
+
 }
 
 @media (max-width: 480px) {
