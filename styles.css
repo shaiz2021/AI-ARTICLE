@@ -8,9 +8,10 @@
 /* Body and Container */
 body {
     font-family: Arial, sans-serif;
+    background: url(Ai.jpg) repeat;
+    background-size: cover;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: white;
 }
 
 .container {
@@ -23,7 +24,7 @@ body {
 
 /* Header */
 header {
-    background: #333;
+    background: linear-gradient(to right, #8d8d8e50, #5d5d5d);
     color: #fff;
     text-align: center;
     margin-bottom: 10px;
@@ -45,9 +46,13 @@ header p {
 
 /* Main Content */
 main {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.containers {
+    margin: 20px;
+    padding: 10px;
 }
 
 section h2 {
@@ -151,7 +156,7 @@ section ul {
 
 /* Footer */
 footer {
-    background: #333;
+    background: linear-gradient(to right, #8d8d8e50, #5d5d5d);
     color: #fff;
     text-align: center;
     padding: 10px 0;
